@@ -5,7 +5,8 @@
 {% block body %}
     <h1>Formulaire</h1>
 
-    {% form_theme form 'bootstrap_5_layout.html.twig' %}
+    {% form_theme form 'mon-theme.html.twig' %}
+    {# form_theme form 'mon-theme.html.twig' si je veux utiliser mon thème #}
     {{ form_start(form) }}
 
     <div class="row">

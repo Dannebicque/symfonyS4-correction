@@ -19,7 +19,10 @@ class ArticleType extends AbstractType
         $builder
             ->add('designation')
             ->add('description')
-            ->add('prix')
+            ->add('prix', null, [
+                'label' => 'Prix unitaire',
+                'help' => 'Le prix unitaire de l\'article',
+            ])
             ->add('quantiteDisponible')
             ->add('fournisseur', EntityType::class, [
                 'class' => Fournisseur::class,
