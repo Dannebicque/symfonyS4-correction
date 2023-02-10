@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello DefaultController!{% endblock %}
+
+{% block body %}
+    <h1>Formulaire</h1>
+
+    {% form_theme form 'bootstrap_5_layout.html.twig' %}
+    {{ form_start(form) }}
+
+    <div class="row">
+        <div class="col-6">
+            {{ form_row(form.description) }}
+            {{ form_row(form.quantiteDisponible) }}
+            {{ form_row(form.fournisseur) }}
+        </div>
+        <div class="col-6">
+            {{ form_row(form.designation) }}
+            {{ form_row(form.prix) }}
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+    {{ form_end(form) }}
+{% endblock %}
