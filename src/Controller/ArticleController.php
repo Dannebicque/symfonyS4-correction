@@ -4,13 +4,8 @@ namespace App\Controller;
 
 use App\Entity\Adresse;
 use App\Entity\Article;
-use App\Entity\Fournisseur;
-use App\Form\AdresseType;
 use App\Form\ArticleType;
-use App\Form\FournisseurType;
 use App\Repository\ArticleRepository;
-use App\Repository\FournisseurRepository;
-use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;

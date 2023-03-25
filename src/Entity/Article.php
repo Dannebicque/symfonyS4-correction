@@ -36,6 +36,7 @@ class Article
     public function __construct()
     {
         $this->tags = new ArrayCollection();
+        $this->options = new ArrayCollection();
     }
 
     public function getId(): ?int
